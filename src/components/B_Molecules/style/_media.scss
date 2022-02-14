@@ -1,0 +1,122 @@
+
+// IPADS -----------
+@media only screen and (max-width: 1024px) {
+   // Header
+   .navbar {
+    padding: 20px !important;
+    #leave-review {
+      font-weight: 900;
+    }
+  }
+  // SearchBanner
+  .banner {
+    height: 340px;
+  }
+  // Footer
+  footer {
+    .ftr-s1 {
+      padding: 20px;
+    }
+  }
+}
+
+// MOBILE  -----------
+@media only screen and (max-width: 736px) {
+  // Header
+  .navbar {
+    padding: 20px !important;
+    #leave-review {
+      font-weight: 900;
+    }
+  }
+  // SearchBanner
+  .banner {
+    height: 200px;
+    min-height: 200px;
+    .search-input-wrapper {
+      width: 350px;
+      height: 30px;
+    }
+    .search-tags {
+      font-size: 8px;
+      width: 340px;
+      margin: 8px auto;
+      .tags {
+        letter-spacing: normal;
+        padding: 2px 6px;
+        margin: 2px;
+      }
+    }
+  }
+  // Footer
+  footer {
+    .ftr-s1 {
+      padding: 20px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      .s1-s1 {
+        order: 2 !important;
+      }
+      .s1-s2 {
+        order: 1 !important;
+        text-align: left;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        p {
+          padding: 0;
+          margin: 0;
+        }
+        .terms {
+          order: 2 !important;
+          align-self: flex-start;
+          flex: 0 1 auto;
+          margin-right: 5px;
+          color: #ff3746;
+        }
+        .pp {
+          order: 3 !important;
+          align-self: flex-start;
+          flex: 1 auto;
+          color: #e4faa6;
+        }
+        .copyright {
+          order: 1 !important;
+          clear: both;
+          flex-basis: 100%;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+  // Top
+  .top-bootcamps-nav {
+    display: block;
+    h3 {
+      font-size: 26px;
+      line-height: 41px;
+    }
+  }
+  .top-bootcamps-list-row {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 50%));
+    grid-column-gap: 0;
+    .bootcamp-section {
+      margin-bottom: 10px;
+    }
+  }
+  // Remote
+  .remote-bootcamps-nav {
+    display: block;
+    h3 {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+  .remote-bootcamps-list-row {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 50%));
+    grid-column-gap: 0;
+    .bootcamp-section {
+      margin-bottom: 10px;
+    }
+  }
+}
+

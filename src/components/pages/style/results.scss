@@ -1,0 +1,117 @@
+@import "../../../style/config";
+
+.results-content-wrapper {
+  width: 60%;
+  margin: 20px auto 0 auto;
+  padding-bottom: 120px; /* Height of the footer element */
+  text-align: center;
+
+  .error {
+    color: red;
+    font-weight: 900;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .results-content-navbar {
+    display: flex;
+    justify-content: space-between;
+
+    .results-all-results {
+      font-weight: 900;
+      font-size: 16px;
+    }
+    .results-sortby select {
+      font-weight: 900;
+      -webkit-appearance: menulist;
+      background-color: inherit;
+      border: none;
+      border-bottom: 2px solid #ff3746;
+    }
+  }
+  .results-bootcamp-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 40px auto;
+    grid-column-gap: 40px;
+  }
+  .results-bootcamp-logo {
+    background-color: #081432;
+    vertical-align: top;
+    height: 140px;
+    width: 170px;
+    padding: 10px; // dirty hack to make logo look better on the center
+    overflow: hidden;
+    .logo-fke-brder {
+      border: 5px solid transparent; // dirty hack to make logo look better on the center
+    }
+    img {
+      height: 110px; // 140 - 20(padding) - 10(border)
+      width: 140px; // 170 - 20(padding) - 10(border)
+    }
+  }
+
+  .results-bootcamp-info {
+    text-align: left;
+    h4 {
+      font-weight: 800;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        color: #135a91;
+        text-decoration: none;
+        transition: 0.3s linear;
+      }
+    }
+  }
+  .results-bootcamp-info-ratings {
+    display: flex;
+    margin: 0;
+    .results-bootcamp-star {
+      margin: 0 10px 4px 0;
+      #rating-empty-star-main,
+      #rating-full-star-main {
+        height: 12px;
+        width: auto;
+        float: left;
+        margin-right: 1px;
+      }
+    }
+  }
+  .results-bootcamp-location {
+    margin: 0 0 20px 0;
+    img {
+      height: 12px;
+      width: auto;
+      margin-right: 3px;
+      vertical-align: baseline;
+    }
+  }
+  .results-bootcamp-dur-price {
+    display: flex;
+    margin: 0;
+    text-align: left;
+    .results-duration {
+      margin-right: 40px;
+    }
+  }
+  .results-bootcamp-addreview {
+    justify-self: end;
+    button {
+      border: none;
+      background-color: #000000;
+      padding: 5px 10px;
+      font-family: Halyard Text;
+      font-style: normal;
+      font-weight: bold;
+      color: #ffffff;
+      &:hover {
+        color: #ff3746;
+      }
+    }
+  }
+}
+
+// Media
+@import "./media";

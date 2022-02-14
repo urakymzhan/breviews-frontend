@@ -1,0 +1,43 @@
+.contact-page-wrapper {
+    padding-bottom: 150px;
+
+        .contact-block {
+            width: 50%;
+            font-family: HalyardTextBook;
+            font-size: 12px;
+            line-height: 14px;
+            border-radius: 4px;
+            margin: 50px auto;
+
+            h3, h5, p {
+                text-align: left;
+            }
+            h3 {
+                color: #ff3746;
+            }
+            h5 {
+                color: #737373;
+            }
+            .c-highlight {
+                color: #b9b7b7;
+            }
+            .email-itself {
+                font-weight: 900;
+            }
+
+            .contact-team-icons {
+                margin-top: 20px;
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+}
+
+@import 'media.scss';
+

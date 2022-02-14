@@ -1,0 +1,15 @@
+.legal-wrapper {
+    text-align: left;
+    padding: 20px 80px 150px 80px;
+    font-family: HalyardTextBook;
+    font-size: 12px;
+    line-height: 14px;
+
+    section {
+        margin-bottom: 20px;
+    }
+    .pre-disclaimer {
+      color: gray;
+    }
+  };
+@import './media';

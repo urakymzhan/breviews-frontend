@@ -1,0 +1,47 @@
+@import "../../../style/config";
+
+.navbar {
+  padding: 20px 80px !important;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+
+  .brlogo {
+    width: auto;
+    height: 38px;
+  }
+  #leave-review {
+    margin-left: 1.6em;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    .nav-link,
+    .dropdown-menu {
+      color: #000000 !important;
+      text-decoration: none;
+      margin-left: 1.6em;
+      font-weight: bold;
+      &:hover {
+        border-bottom: 0.1px solid;
+      }
+    }
+    // override color
+    #login,
+    #logout {
+      color: #e83e8c !important;
+    }
+  }
+  // burger
+  .navbar-toggler.collapsed {
+    color: #000000 !important;
+    border-color: #000000 !important;
+  }
+  .navbar-toggler-icon {
+    background-image: url("../../../../public/assets/burger.png") !important;
+  }
+}
+
+// Media
+@import "./media";

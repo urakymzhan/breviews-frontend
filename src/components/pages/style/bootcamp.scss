@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif&display=swap");
+@import "../../../style/config";
+
+.reviews-content-wrapper {
+  padding-bottom: 180px; /* Height of the footer element */
+  background-color: #f2f2f2;
+  text-align: center;
+
+  .bootcamps-header {
+    background: linear-gradient(180deg, #e7f3e7 61.98%, #d6eee5 94.27%);
+    min-height: 300px;
+    padding-top: 50px;
+
+    .bootcamps-header-container {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      column-gap: 40px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .logo-wraper {
+      .bootcamp-logo {
+        background-color: #081432;
+        vertical-align: top;
+        height: 180px;
+        width: 180px;
+        padding: 5px; // dirty hack to make logo look better on the center
+        overflow: hidden;
+
+        .logo-fke-brder {
+          border: 5px solid transparent; // dirty hack to make logo look better on the center
+        }
+        img {
+          height: 160px; // 180 - 10(padding) - 10(border)
+          width: 160px; // 180 - 10(padding) - 10(border)
+        }
+      }
+    }
+
+    .bootcamp-info {
+      color: gray;
+      text-align: left;
+      display: grid;
+      grid-row-gap: 1px;
+
+      .bootcamp-info-row0,
+      .bootcamp-info-row1,
+      .bootcamp-info-row2,
+      .bootcamp-info-row3 {
+        text-align: inherit;
+        // padding: 5px 0;
+      }
+      .bootcamp-info-row0 {
+        margin-bottom: -10px;
+        h3 {
+          font-family: Halyard Text;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 42px;
+          line-height: 59px;
+          letter-spacing: 1px;
+          color: #000000;
+        }
+        img {
+          height: 24px;
+          width: auto;
+          background: inherit;
+        }
+      }
+      .bootcamp-info-row1 {
+        .star-rating-container {
+          #rating-empty-star-main,
+          #rating-full-star-main {
+            height: 16px;
+            width: auto;
+            float: left;
+            margin-right: 1px;
+          }
+        }
+        p {
+          display: inline-block;
+          margin: 0 30px 0 10px;
+        }
+        .total-reviews-cnt {
+          font-family: Halyard Text;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18px;
+          color: #000000;
+        }
+          img {
+            height: 12px;
+            width: auto;
+            margin-right: 5px;
+            vertical-align: baseline;
+          }
+        .location {
+          font-family: HalyardTextBook;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+        }
+      }
+      .bootcamp-info-row2 {
+        .row2-tags {
+          padding: 2px 10px;
+          margin: 0 10px 0 0;
+          background-color: inherit;
+          border: 1px solid #000000;
+          border-radius: 14.5px;
+          font-family: HalyardTextBook;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+      .bootcamp-info-row3 {
+        p {
+          display: inline-block;
+          margin: 0 80px 0 0;
+          font-family: HalyardTextBook;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+          span {
+            font-family: Halyard Text;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 23px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  // reviews content
+  .reviews-main {
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    .aside-wrapper {
+      // grid-area: aside;
+      .reviews-progress-bars {
+        background: #ffffff;
+        width: 300px;
+        min-height: 152px;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        .progressbar-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 2fr;
+        }
+        p {
+          font-family: Halyard Text;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 18px;
+          color: #000000;
+        }
+        .rating-numbers {
+          padding-right: 20px;
+        }
+        .star-rating-container {
+          // width: 100%;
+          #rating-empty-star-main,
+          #rating-full-star-main {
+            height: 10px;
+            width: auto;
+            float: left;
+            margin-right: 1px;
+          }
+        }
+        .progress {
+          height: 10px;
+          // border: 1px solid;
+          align-self: center;
+          .progress-bar {
+            background-color: #000000;
+          }
+        }
+      }
+      .bootcamp-write-a-review {
+        background: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 20px 20px 50px 20px;
+        width: 300px;
+        // height: 300px;
+        h6 {
+          font-family: Halyard Text;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 34px;
+          color: #000000;
+          text-align: left;
+        }
+        p {
+          text-align: left;
+          font-family: HalyardTextBook;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000000;
+          // border: 1px solid;
+          // margin: 10px 0;
+        }
+        a {
+          text-decoration: none;
+          color: purple;
+        }
+        button {
+          border: none;
+          background: #000000;
+          padding: 5px 60px;
+          font-family: Halyard Text;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 28px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+    .reviews-content {
+      .review-warning {
+      margin-bottom: 30px;
+        p {
+          color: gray;
+          font-size: 8px;
+          text-align: right;
+        }
+      }
+      .srt-div {
+        text-align: right;
+        margin-bottom: 10px;
+        align-self: end;
+        select {
+          // from semantic-ui
+          font-weight: bold;
+          -webkit-appearance: menulist;
+          background-color: inherit;
+          border: none;
+          border-bottom: 2px solid #ff3746;
+        }
+      }
+      .empty-review-text {
+        margin: 20px 0;
+        color: #ff0000;
+      }
+    }
+  }
+}
+  .MuiPagination-root {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .MuiPagination-ul {
+      justify-content: center!important;
+      .MuiPaginationItem-page.Mui-selected {
+        background-color: #000000;
+        color: #fff;
+      }
+    }
+  }
+@import "./media";
