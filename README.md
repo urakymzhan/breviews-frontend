@@ -10,3 +10,7 @@
 
 - Domain from "Google Domains"
 - Hosting "Google Firebase"
+
+- Heroku Remote: heroku
+- https://git.heroku.com/ba-backend.git (fetch)
+- heroku https://git.heroku.com/ba-backend.git (push)
